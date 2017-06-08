@@ -7,5 +7,25 @@
 .article-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
+.article-preview {
+  width: 300px;
+  height: 250px;
+  margin: 20px;
+}
+
+.article-preview:hover {
+  color: #F5181E;
+  cursor: pointer;
+}
+
+.preview-image {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 15px;
 }
