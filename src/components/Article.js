@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {getArticle} from '../utils/api';
+// import queryString from 'query-string';
 
 class Article extends Component {
   constructor(props) {
@@ -10,7 +11,8 @@ class Article extends Component {
   }
 
   componentDidMount() {
-    getArticle('http://wiadomosci.wp.pl/posel-kukiz15-chce-zamykac-sedziow-tk-w-obozach-tylko-sobie-zartowalem-6131385401800833a')
+    const articleUrl = this.props.location.search.slice(1);
+    getArticle(articleUrl)
       .then(data => {
         this.setState({
           articleBody: data
