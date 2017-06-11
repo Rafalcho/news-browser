@@ -8,6 +8,7 @@ body, h1, h2, h3, p, a {
   width: 100%;
   margin: 0 auto;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -52,6 +53,11 @@ p {
   margin: 0 auto;
 }
 
+.article h1 {
+  font-size: 28px;
+  line-height: 30px;
+}
+
 .article a {
 color: #416fd6
 }
@@ -60,7 +66,7 @@ color: #416fd6
   text-decoration: underline;
 }
 
-.article-photo {
+.article-photo, .article img {
   width: 100%;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }

@@ -27,7 +27,8 @@ class Article extends Component {
 
     if (this.state.articleBody) {
       title = this.state.articleBody.title;
-      image = this.state.articleBody.img.url || null;
+      this.state.articleBody.img ? image = this.state.articleBody.img.url : image = 'https://v.wpimg.pl/LTExNDI2JT1qN2F3eQo0ZX1IYSBnRTw9KB9gNCUdemN0SnhweAV5eWhJeXx8CntkdUl5azNTPzggCCUlZAF8bD1JdnRnQiIz/';
+
       article = this.state.articleBody.body.map((part, index) => {
         function createMarkup() {
           return {__html: part.data};

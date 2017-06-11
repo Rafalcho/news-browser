@@ -7,11 +7,12 @@ class ArticleList extends Component {
     super(props);
     this.state = {
       articles: null,
+      articleType: 'Tech'
     };
   }
 
   componentDidMount() {
-    getNews()
+    getNews(this.state.articleType)
       .then(data => {
         this.setState({
           articles: data,
