@@ -8,7 +8,6 @@ class ArticleList extends Component {
     this.state = {
       articles: null,
       articleType: null,
-
     };
   }
 
@@ -17,7 +16,6 @@ class ArticleList extends Component {
 
     if (!articleType) {
       articleType = 'Wiadomosci';
-
     }
 
     getNews(articleType)
@@ -27,14 +25,6 @@ class ArticleList extends Component {
         });
       });
   }
-
-  // shouldComponentUpdate() {
-  //   if (window.location.pathname.slice(1) !== this.state.articleType) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // }
 
   componentDidUpdate(nextProps, nextState) {
     let articleType = window.location.pathname.slice(1);

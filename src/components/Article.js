@@ -10,7 +10,8 @@ class Article extends Component {
   }
 
   componentDidMount() {
-    const articleUrl = this.props.location.search.slice(1);
+    const articleUrl  = this.props.location.search.slice(1);
+
     getArticle(articleUrl)
       .then(data => {
         this.setState({

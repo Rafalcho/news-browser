@@ -1,5 +1,6 @@
 export const getNews = (articleType) => {
-  const query = `{articles(t: [Article], service: [${articleType}], limit:50) {id url title body{data}img{url}}}`;
+  const serviceType = articleType.replace('/article', '');
+  const query = `{articles(t: [Article], service: [${serviceType}], limit:50) {id url title body{data}img{url}}}`;
 
   const url = `https://mobileapi.wp.pl/v1/graphql?query=${query}`;
 

@@ -16,7 +16,6 @@ class App extends Component {
           <Route exact path='/Wiadomosci' component={ArticleList} />
           <Route exact path='/Tech' component={ArticleList} />
           <Route exact path='/Gwiazdy' component={ArticleList} />
-          <Route path='/article' component={Article} />
           <Route path='/Wiadomosci/article' component={Article} />
           <Route path='/Tech/article' component={Article} />
           <Route path='/Gwiazdy/article' component={Article} />
