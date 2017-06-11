@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {getArticle} from '../utils/api';
-// import queryString from 'query-string';
 
 class Article extends Component {
   constructor(props) {

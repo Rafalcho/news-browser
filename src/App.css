@@ -70,3 +70,21 @@ color: #416fd6
   width: 100%;
   margin: 20px 0;
 }
+
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 15px;
+}
+
+.nav li:hover {
+  color: #F5181E;
+}
+
+.active {
+  color: #F5181E;
+  font-weight: bold;
+}

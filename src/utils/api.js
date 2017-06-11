@@ -13,7 +13,6 @@ export const getNews = (articleType) => {
     }
   })
   .then(response => {
-    console.log(response.data.articles);
     return response.data.articles;
 
   })
@@ -35,7 +34,6 @@ export const getArticle = (articleUrl) => {
     }
   })
   .then(response => {
-    console.log(response.data.article);
     return response.data.article;
 
   })
